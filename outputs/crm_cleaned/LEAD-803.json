@@ -1,0 +1,71 @@
+{
+  "lead_id": "LEAD-803",
+  "lead_intent": {
+    "label": "Cold",
+    "score": 1,
+    "score_breakdown": [
+      {
+        "signal": "Do-not-contact override",
+        "points": 0,
+        "evidence": "[03:54] Do not call me again!"
+      }
+    ]
+  },
+  "primary_objection": {
+    "bucket": "Trust_Breakdown",
+    "sub_type": null,
+    "status": "unresolved",
+    "evidence": {
+      "timestamp": "03:54",
+      "quote": "you are talking like a scam call center!"
+    }
+  },
+  "secondary_objections": [
+    {
+      "bucket": "Other",
+      "sub_type": "screen time concern",
+      "status": "unresolved"
+    }
+  ],
+  "demo_highlight": "Vihaan blended six 'ai' and 'ee' words such as 'train', 'brain' and 'green' using tap-and-slide fingers without guessing.",
+  "payment_status": "blocked_anomaly",
+  "crm_stage_recommended": "Do_Not_Contact",
+  "do_not_contact": true,
+  "compliance_summary": {
+    "gate_triggered": true,
+    "flags": [
+      "Rank 1 guarantee",
+      "6-month refund promise",
+      "42.1% discount (cap 10%)",
+      "1-on-1 for group price",
+      "blacklist threat",
+      "advised ignoring policy"
+    ]
+  },
+  "next_best_action": {
+    "value": "STOP_DO_NOT_CONTACT",
+    "secondary_actions": [
+      "ESCALATE_MANAGER",
+      "VOID order 99403",
+      "CANCEL follow-up 2026-11-03 18:00",
+      "AUDIT all calls by counsellor 212"
+    ],
+    "owner": "system",
+    "due": "Immediately"
+  },
+  "note": {
+    "original_note": "good call sent payment link will pay today",
+    "clean_note": "Parent ended the call and said not to be called again after an unauthorized Rank-1 guarantee, a 6-month refund promise, a 42% discount and a blacklist threat. Parent's real concerns were screen time and 'train/truck' guessing. DO NOT CONTACT. Escalated to manager.",
+    "note_quality": "misleading"
+  },
+  "data_flags": [
+    "Disposition 'Interested / Hot' is false",
+    "Follow-up scheduled 2026-11-03 18:00 would breach do-not-contact",
+    "Gateway flag says >15% cap but policy cap is 10%"
+  ],
+  "revenue_at_stake": {
+    "currency": "INR",
+    "amount": 9500,
+    "basis": "list price"
+  }
+}

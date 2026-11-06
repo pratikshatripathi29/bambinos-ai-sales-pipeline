@@ -1,0 +1,214 @@
+{
+  "lead_id": "LEAD-806",
+  "call_id": "7006",
+  "counsellor": "Karan K*** (218)",
+  "criteria": [
+    {
+      "name": "rapport_child_praise",
+      "weight": 10,
+      "rating": 1,
+      "evidence": [
+        {
+          "timestamp": "00:44",
+          "speaker": "COUNSELLOR",
+          "quote": "Ananya did fantastic in the demo class! She is a natural Grandmaster!"
+        }
+      ],
+      "reasoning": "Praise contradicts the evaluation (engagement 2/5, overwhelmed in group)."
+    },
+    {
+      "name": "diagnosing_learning_gap",
+      "weight": 20,
+      "rating": 1,
+      "evidence": [
+        {
+          "timestamp": "00:05",
+          "speaker": "COUNSELLOR",
+          "quote": "Let me quickly complete my mandatory call checklist: Discovery Question 1—What is your primary goal for Ananya?"
+        },
+        {
+          "timestamp": "00:32",
+          "speaker": "PARENT",
+          "quote": "why are you reading questions at me like a robot?"
+        }
+      ],
+      "reasoning": "Reads three questions in one breath and never builds on any answer (gaming)."
+    },
+    {
+      "name": "pitch_before_price",
+      "weight": 15,
+      "rating": 1,
+      "evidence": [
+        {
+          "timestamp": "00:44",
+          "speaker": "COUNSELLOR",
+          "quote": "Let us lock her seat in the 6-month Unbox Chess Beginners batch for Rs. 11,000 today!"
+        }
+      ],
+      "reasoning": "Price at 00:44, before any method."
+    },
+    {
+      "name": "objection_handling",
+      "weight": 20,
+      "rating": 1,
+      "evidence": [
+        {
+          "timestamp": "01:58",
+          "speaker": "COUNSELLOR",
+          "quote": "Ma'am kids always make excuses!"
+        },
+        {
+          "timestamp": "02:38",
+          "speaker": "COUNSELLOR",
+          "quote": "all batches are standard 6 kids, just pay Rs. 9,900 on the link and Ops team will see later"
+        }
+      ],
+      "reasoning": "Dismisses the parent's valid concern and ignores the evaluation's recommended fix."
+    },
+    {
+      "name": "trial_close_next_step",
+      "weight": 10,
+      "rating": 1,
+      "evidence": [
+        {
+          "timestamp": "01:58",
+          "speaker": "COUNSELLOR",
+          "quote": "if you pay before 6 PM today—that covers my urgency trial close!"
+        }
+      ],
+      "reasoning": "Manufactured deadline, stated aloud as a rubric tactic."
+    },
+    {
+      "name": "compliance_honesty",
+      "weight": 20,
+      "rating": 1,
+      "evidence": [
+        {
+          "timestamp": "02:38",
+          "speaker": "COUNSELLOR",
+          "quote": "all batches are standard 6 kids, just pay Rs. 9,900 on the link and Ops team will see later"
+        }
+      ],
+      "reasoning": "Breaches the Chess (class 401) rule: must offer a bridge session or age 5-6 micro-batch, not push a standard batch."
+    },
+    {
+      "name": "listening_talk_balance",
+      "weight": 5,
+      "rating": 1,
+      "evidence": [
+        {
+          "timestamp": "01:32",
+          "speaker": "PARENT",
+          "quote": "Are you even listening to me?!"
+        }
+      ],
+      "reasoning": "Rep talk 74%; the parent has to ask if the rep is listening."
+    }
+  ],
+  "raw_score": 20.0,
+  "gate_triggered": true,
+  "final_score": 20.0,
+  "band": "Critical",
+  "gaming_detected": true,
+  "claims_check": [
+    {
+      "timestamp": "00:44",
+      "claim": "Ananya did fantastic; natural Grandmaster",
+      "verdict": "VIOLATION",
+      "source": "DEMO_EVAL",
+      "note": "Engagement 2/5; overwhelmed and turned camera off"
+    },
+    {
+      "timestamp": "01:20",
+      "claim": "Chess improves IQ, memory, concentration and maths scores by 40%",
+      "verdict": "UNVERIFIED",
+      "source": "none",
+      "note": "Unsubstantiated outcome claim; recommend removing"
+    },
+    {
+      "timestamp": "01:58",
+      "claim": "10% discount: Rs. 11,000 to Rs. 9,900",
+      "verdict": "VERIFIED",
+      "source": "POLICY",
+      "note": "Equals the Rs. 1,100 cap; used as pressure, not a violation by amount"
+    },
+    {
+      "timestamp": "02:38",
+      "claim": "All batches are standard 6 kids",
+      "verdict": "VIOLATION",
+      "source": "POLICY",
+      "note": "Policy 401 requires offering an age 5-6 micro-batch (max 3) or a complimentary 1-on-1 bridge"
+    },
+    {
+      "timestamp": "00:44",
+      "claim": "Fee Rs. 11,000",
+      "verdict": "VERIFIED",
+      "source": "POLICY",
+      "note": "Class 401 INR 11,000"
+    }
+  ],
+  "compliance_flags": [
+    {
+      "rule": "Policy 401: offer bridge session / micro-batch instead of pushing a standard batch",
+      "severity": "critical",
+      "timestamp": "02:38",
+      "quote": "all batches are standard 6 kids, just pay Rs. 9,900 on the link and Ops team will see later"
+    },
+    {
+      "rule": "Pressure on a 6-year-old",
+      "severity": "critical",
+      "timestamp": "01:58",
+      "quote": "force her to sit in the 6-kid batch for 3 weeks"
+    },
+    {
+      "rule": "Dismissive language toward the parent",
+      "severity": "critical",
+      "timestamp": "01:58",
+      "quote": "Ma'am kids always make excuses!"
+    },
+    {
+      "rule": "Unsubstantiated outcome claim",
+      "severity": "minor",
+      "timestamp": "01:20",
+      "quote": "Chess improves IQ, memory, concentration, and maths scores by 40%!"
+    }
+  ],
+  "discount_check": {
+    "standard_fee": 11000,
+    "discount_offered": 1100,
+    "discount_pct": 10.0,
+    "cap_pct": 10,
+    "within_cap": true
+  },
+  "coaching": {
+    "strengths": [
+      {
+        "timestamp": "00:05",
+        "text": "You stated the 14-day refund and the 6-kid batch structure accurately and early."
+      },
+      {
+        "timestamp": "01:58",
+        "text": "Your discount arithmetic was correct and within the cap."
+      }
+    ],
+    "fixes": [
+      {
+        "timestamp": "02:38",
+        "text": "When a young child was overwhelmed, the policy gives you a better answer than the standard batch. Use it.",
+        "better_line": "You're right, Swathi ma'am. The group was too fast for Ananya. Coach Arvind recommended a gentler option. We can offer a complimentary 1-on-1 bridge session, and I'll ask our academic team about a beginners' group for her age today."
+      },
+      {
+        "timestamp": "00:05",
+        "text": "Questions are for listening. One question, then reflect the parent's answer before the next.",
+        "better_line": "How did Ananya feel at the end of the class?"
+      }
+    ],
+    "next_call_drill": "Ask one open question, wait, then say back one thing the parent told you before moving on."
+  },
+  "parent_signals": {
+    "do_not_contact_requested": false,
+    "do_not_contact_quote": null,
+    "hostile_or_distressed": true
+  },
+  "missing_inputs": []
+}

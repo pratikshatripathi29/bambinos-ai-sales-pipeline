@@ -1,0 +1,76 @@
+{
+  "lead_id": "LEAD-802",
+  "lead_intent": {
+    "label": "Cold",
+    "score": 4,
+    "score_breakdown": [
+      {
+        "signal": "Asked a method question",
+        "points": 1,
+        "evidence": "[02:06] Did the teacher today notice why she struggles with word problems?"
+      },
+      {
+        "signal": "Engagement >= 4",
+        "points": 1,
+        "evidence": "evaluation 9002: 4"
+      },
+      {
+        "signal": "Competitor comparison unresolved",
+        "points": -1,
+        "evidence": "[00:50] retired school teacher ... AED 350"
+      }
+    ]
+  },
+  "primary_objection": {
+    "bucket": "Competitor_Comparison",
+    "sub_type": "local_tutor",
+    "status": "unresolved",
+    "evidence": {
+      "timestamp": "00:50",
+      "quote": "a retired school teacher takes offline maths tuition 3 days a week for AED 350"
+    }
+  },
+  "secondary_objections": [
+    {
+      "bucket": "Price",
+      "sub_type": "lump_sum_too_high",
+      "status": "unresolved"
+    }
+  ],
+  "demo_highlight": "Zoya used the visual Bar-Model to solve two Grade-6 British-curriculum fraction word puzzles on her own and exclaimed 'that was so easy!'",
+  "payment_status": "link_sent",
+  "crm_stage_recommended": "Follow_Up_Cold",
+  "do_not_contact": false,
+  "compliance_summary": {
+    "gate_triggered": true,
+    "flags": [
+      "Policy 205 price dump at 00:30 (critical)",
+      "false urgency (minor)"
+    ]
+  },
+  "next_best_action": {
+    "value": "ESCALATE_MANAGER",
+    "secondary_actions": [
+      "SEND_WHATSAPP_SEQUENCE (manager approval)",
+      "rep coaching"
+    ],
+    "owner": "manager",
+    "due": "2026-11-04 12:00 GST"
+  },
+  "note": {
+    "original_note": "price high thinking",
+    "clean_note": "Core worry is Zoya failing British-curriculum word problems (guesses the operation), and why pay AED 1,200 vs an AED 350 local tutor. Rep quoted price at 00:30, offered AED 100 off and a 30-minute deadline. Parent declined to be rushed and wants curriculum details to discuss with the tutor. Method answer (Bar-Model) not yet given.",
+    "note_quality": "misleading"
+  },
+  "data_flags": [
+    "Disposition 'Price issue' contradicts evidence: real objection is local-tutor comparison",
+    "Order 99402 standard_amount 12000.0 AED (policy 1,200): 10x entry error",
+    "12-month 96-class package quoted but not in catalog",
+    "Score sits at the Cold/Warm boundary (4)"
+  ],
+  "revenue_at_stake": {
+    "currency": "AED",
+    "amount": 1100,
+    "basis": "agreed net"
+  }
+}

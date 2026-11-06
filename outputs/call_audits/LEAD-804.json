@@ -1,0 +1,211 @@
+{
+  "lead_id": "LEAD-804",
+  "call_id": "7004",
+  "counsellor": "Rohan S*** (204)",
+  "criteria": [
+    {
+      "name": "rapport_child_praise",
+      "weight": 10,
+      "rating": 4,
+      "evidence": [
+        {
+          "timestamp": "00:10",
+          "speaker": "COUNSELLOR",
+          "quote": "It was wonderful seeing Meera in Acharya Aditi's Little Yogi session today."
+        },
+        {
+          "timestamp": "00:50",
+          "speaker": "COUNSELLOR",
+          "quote": "Why did Arjuna feel overwhelmed before the event even started?"
+        }
+      ],
+      "reasoning": "Specific and warm. The teacher-note quote is not in the evaluation row, so it is UNVERIFIED."
+    },
+    {
+      "name": "diagnosing_learning_gap",
+      "weight": 20,
+      "rating": 5,
+      "evidence": [
+        {
+          "timestamp": "00:22",
+          "speaker": "PARENT",
+          "quote": "she rolls her eyes and thinks it's a parent lecture"
+        },
+        {
+          "timestamp": "00:50",
+          "speaker": "COUNSELLOR",
+          "quote": "through interactive stories and reflection, never dry rote memorization"
+        }
+      ],
+      "reasoning": "Parent's heritage-values pain is reflected back and matches the evaluation (loses interest if told to memorize)."
+    },
+    {
+      "name": "pitch_before_price",
+      "weight": 15,
+      "rating": 5,
+      "evidence": [
+        {
+          "timestamp": "02:20",
+          "speaker": "PARENT",
+          "quote": "And the fee is USD 265 for the full 48 sessions, right?"
+        }
+      ],
+      "reasoning": "Value pitch first; fee only after the parent says she is sold."
+    },
+    {
+      "name": "objection_handling",
+      "weight": 20,
+      "rating": 5,
+      "evidence": [
+        {
+          "timestamp": "01:18",
+          "speaker": "PARENT",
+          "quote": "she cannot make weekday evenings"
+        },
+        {
+          "timestamp": "02:00",
+          "speaker": "COUNSELLOR",
+          "quote": "Acharya Aditi leads a dedicated US West Coast batch on Saturdays and Sundays at 9:30 AM PST"
+        },
+        {
+          "timestamp": "02:20",
+          "speaker": "PARENT",
+          "quote": "Saturday and Sunday at 9:30 AM PST with Acharya Aditi is literally perfect!"
+        }
+      ],
+      "reasoning": "Checks the live roster and solves the schedule conflict while keeping the same teacher."
+    },
+    {
+      "name": "trial_close_next_step",
+      "weight": 10,
+      "rating": 4,
+      "evidence": [
+        {
+          "timestamp": "02:58",
+          "speaker": "COUNSELLOR",
+          "quote": "Just sent it on your WhatsApp, Neha!"
+        },
+        {
+          "timestamp": "02:42",
+          "speaker": "PARENT",
+          "quote": "I'll pay on the Stripe link as soon as my meeting finishes around 11:30 AM PST"
+        }
+      ],
+      "reasoning": "Link sent immediately with no pressure. No check-in time set and no explicit batch-seat confirmation."
+    },
+    {
+      "name": "compliance_honesty",
+      "weight": 20,
+      "rating": 3,
+      "evidence": [
+        {
+          "timestamp": "02:30",
+          "speaker": "COUNSELLOR",
+          "quote": "backed by our 14-day 100% refund policy"
+        }
+      ],
+      "reasoning": "Fee verified; refund conditions omitted; teacher-note quote and '4 kids enrolled' unverifiable."
+    },
+    {
+      "name": "listening_talk_balance",
+      "weight": 5,
+      "rating": 5,
+      "evidence": [
+        {
+          "timestamp": "01:42",
+          "speaker": "COUNSELLOR",
+          "quote": "Let me check Acharya Aditi's live US batch roster right now so we don't lose that teacher connection"
+        }
+      ],
+      "reasoning": "Rep talk 44%; acts directly on what the parent said."
+    }
+  ],
+  "raw_score": 88.0,
+  "gate_triggered": false,
+  "final_score": 88.0,
+  "band": "Excellent",
+  "gaming_detected": false,
+  "claims_check": [
+    {
+      "timestamp": "02:30",
+      "claim": "USD 265 for 48 sessions",
+      "verdict": "VERIFIED",
+      "source": "POLICY",
+      "note": "Class 302 USA USD 265; order 99404 matches"
+    },
+    {
+      "timestamp": "02:30",
+      "claim": "14-day 100% refund",
+      "verdict": "PARTIAL",
+      "source": "POLICY",
+      "note": "Omits 'up to 4 classes attended'"
+    },
+    {
+      "timestamp": "00:50",
+      "claim": "Teacher's note called Meera's Arjuna question 'the most thoughtful of the week'",
+      "verdict": "UNVERIFIED",
+      "source": "none",
+      "note": "Evaluation row mentions deep 'why' questions but not this quote"
+    },
+    {
+      "timestamp": "02:00",
+      "claim": "Sat-Sun 9:30 AM PST batch with 4 kids enrolled",
+      "verdict": "UNVERIFIED",
+      "source": "none",
+      "note": "Eval recommends US_Weekend_Small_Group; enrolment count not in inputs"
+    },
+    {
+      "timestamp": "00:50",
+      "claim": "Framed as character building through stories, not rote",
+      "verdict": "VERIFIED",
+      "source": "POLICY",
+      "note": "Matches the policy's required framing for class 302"
+    }
+  ],
+  "compliance_flags": [
+    {
+      "rule": "Refund stated without policy conditions",
+      "severity": "minor",
+      "timestamp": "02:30",
+      "quote": "backed by our 14-day 100% refund policy"
+    }
+  ],
+  "discount_check": {
+    "standard_fee": 265,
+    "discount_offered": 0,
+    "discount_pct": 0.0,
+    "cap_pct": 10,
+    "within_cap": true
+  },
+  "coaching": {
+    "strengths": [
+      {
+        "timestamp": "01:42",
+        "text": "You checked the live roster before answering, so the parent saw you solving her real problem instead of reciting a pitch."
+      },
+      {
+        "timestamp": "00:50",
+        "text": "You framed the course around focus and resilience through stories, which is exactly the framing the policy requires."
+      }
+    ],
+    "fixes": [
+      {
+        "timestamp": "02:58",
+        "text": "A one-line wrap-up locks in the next step and protects you from a stale CRM.",
+        "better_line": "I've sent the link and noted the Sat-Sun 9:30 AM batch. I'll check in at 12 noon in case anything needs fixing."
+      },
+      {
+        "timestamp": "02:30",
+        "text": "State the refund with its condition.",
+        "better_line": "Full refund within 14 days if no more than 4 classes have been attended."
+      }
+    ],
+    "next_call_drill": "After every call, update the CRM stage before opening the next lead. (Her payment arrived 2 hours later and the stage never changed.)"
+  },
+  "parent_signals": {
+    "do_not_contact_requested": false,
+    "do_not_contact_quote": null,
+    "hostile_or_distressed": false
+  },
+  "missing_inputs": []
+}

@@ -1,0 +1,85 @@
+{
+  "lead_id": "LEAD-806",
+  "status": "SEND_HELD",
+  "preflight": [
+    {
+      "check": "A_do_not_contact",
+      "result": "pass",
+      "reason": "Parent said 'Goodbye' and 'I'm not paying anything' but did not ask for no contact"
+    },
+    {
+      "check": "B_already_paid",
+      "result": "pass",
+      "reason": "No order"
+    },
+    {
+      "check": "C_compliance_gate",
+      "result": "apply",
+      "reason": "Gate triggered: manager_approve once unblocked"
+    },
+    {
+      "check": "D_academic_hold",
+      "result": "apply",
+      "reason": "Parent will not proceed until Academic confirms an age 5-6 option: all messages blocked"
+    },
+    {
+      "check": "F_standard",
+      "result": "apply",
+      "reason": "Conversion sequence after unblock"
+    }
+  ],
+  "stop_reason": null,
+  "stop_alert": null,
+  "language": "English",
+  "messages": [
+    {
+      "touch": 1,
+      "send_day_offset": 0,
+      "send_window_local": "09:00-20:00",
+      "purpose": "Acknowledge the miss; promise only what Academic will confirm",
+      "text": "Hi Swathi ma'am, thank you for telling us how Ananya felt in the demo. You're right, the group was too fast for her. Coach Arvind noted she smiled when her Knight captured the dragon's treasure. Our academic team will confirm a calm option for her age by [DATE_FROM_ACADEMIC]: a complimentary 1-on-1 bridge session or a small beginners' group.",
+      "word_count": 58,
+      "demo_highlight_used": "Knight and dragon's treasure",
+      "objection_addressed": "Child_Not_Interested / demo_batch_mismatch",
+      "send_mode": "blocked",
+      "blocked_reason": "Waiting for Academic team to confirm the batch or bridge session exists (+ manager approval)",
+      "approver_checklist": [
+        "Academic confirms which option exists",
+        "Replace [DATE_FROM_ACADEMIC]",
+        "Send from the academic team or manager, not counsellor 218"
+      ]
+    },
+    {
+      "touch": 2,
+      "send_day_offset": 2,
+      "send_window_local": "09:00-20:00",
+      "purpose": "Concrete option and low-stakes next step",
+      "text": "Hi Swathi ma'am, an update from our academic team: [CONFIRMED_OPTION]. Ananya can try a complimentary 1-on-1 starter session before you decide anything about enrolling. Which day suits her best?",
+      "word_count": 29,
+      "demo_highlight_used": null,
+      "objection_addressed": "Child_Not_Interested / demo_batch_mismatch",
+      "send_mode": "blocked",
+      "blocked_reason": "Waiting for Academic confirmation",
+      "approver_checklist": [
+        "Option confirmed",
+        "Session is complimentary per policy 401"
+      ]
+    },
+    {
+      "touch": 3,
+      "send_day_offset": 5,
+      "send_window_local": "09:00-20:00",
+      "purpose": "Easy close",
+      "text": "Hi Swathi ma'am, no pressure at all. Whenever Ananya feels ready, the 1-on-1 starter is there for her. If you'd rather wait, I'll stay in touch lightly.",
+      "word_count": 27,
+      "demo_highlight_used": null,
+      "objection_addressed": "Child_Not_Interested / demo_batch_mismatch",
+      "send_mode": "blocked",
+      "blocked_reason": "Waiting for Academic confirmation",
+      "approver_checklist": [
+        "Only if no reply to touch 2"
+      ]
+    }
+  ],
+  "manager_note": "Do not let counsellor 218 re-contact this parent. The policy-mandated fix (bridge session or micro-batch) was ignored on the call. The micro-batch price is not in the catalog."
+}

@@ -1,0 +1,55 @@
+{
+  "lead_id": "LEAD-811",
+  "lead_intent": {
+    "label": "Hot",
+    "score": 8,
+    "score_breakdown": [
+      {
+        "signal": "Inherited from primary record LEAD-801",
+        "points": 0,
+        "evidence": "same user_id 51001, student_id 78001"
+      }
+    ]
+  },
+  "primary_objection": {
+    "bucket": "Spouse_Decision",
+    "sub_type": null,
+    "status": "unresolved",
+    "evidence": {
+      "timestamp": null,
+      "quote": null
+    }
+  },
+  "secondary_objections": [],
+  "demo_highlight": "Inherited from LEAD-801 (Aarav's 'Superhero Hook' space story).",
+  "payment_status": "link_opened",
+  "crm_stage_recommended": "Merged",
+  "do_not_contact": false,
+  "compliance_summary": {
+    "gate_triggered": false,
+    "flags": []
+  },
+  "next_best_action": {
+    "value": "MERGE_DUPLICATE",
+    "secondary_actions": [
+      "block outreach by counsellor 215",
+      "log brochure download as intent signal"
+    ],
+    "owner": "crm_admin",
+    "due": "Immediately"
+  },
+  "note": {
+    "original_note": "parent clicked brochure download on website",
+    "clean_note": "Duplicate of LEAD-801 (same user, student, mobile, email). Brochure downloaded 11-03 08:10, a buying signal while the father is deciding. Merge into LEAD-801; Rohan stays owner.",
+    "note_quality": "accurate"
+  },
+  "data_flags": [
+    "Duplicate routed to a different counsellor",
+    "Brochure download is a re-engagement signal not captured in scoring"
+  ],
+  "revenue_at_stake": {
+    "currency": "INR",
+    "amount": 0,
+    "basis": "unknown"
+  }
+}

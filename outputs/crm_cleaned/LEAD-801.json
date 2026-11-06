@@ -1,0 +1,83 @@
+{
+  "lead_id": "LEAD-801",
+  "lead_intent": {
+    "label": "Hot",
+    "score": 8,
+    "score_breakdown": [
+      {
+        "signal": "Payment link opened (twice)",
+        "points": 2,
+        "evidence": "order 99401 Unpaid_Link_Opened_Twice, 2026-11-02 21:15"
+      },
+      {
+        "signal": "Asked logistics (timings, fee)",
+        "points": 1,
+        "evidence": "[02:24] What are the batch timings and fee for the 6-month track?"
+      },
+      {
+        "signal": "Engagement >= 4",
+        "points": 1,
+        "evidence": "evaluation 9001: 5"
+      },
+      {
+        "signal": "Price accepted",
+        "points": 1,
+        "evidence": "[02:58] I'm fine with the fee"
+      },
+      {
+        "signal": "Concrete next step with time",
+        "points": 1,
+        "evidence": "[04:30] Yes, 11 AM tomorrow works."
+      },
+      {
+        "signal": "Decision-maker absent",
+        "points": -1,
+        "evidence": "[02:58] my husband wasn't home"
+      }
+    ]
+  },
+  "primary_objection": {
+    "bucket": "Spouse_Decision",
+    "sub_type": null,
+    "status": "unresolved",
+    "evidence": {
+      "timestamp": "02:58",
+      "quote": "we always decide together on Aarav's classes"
+    }
+  },
+  "secondary_objections": [],
+  "demo_highlight": "Aarav froze at first, then used the 3-step 'Superhero Hook' and spoke for 45 seconds about a space rescue with full hand gestures and a big smile.",
+  "payment_status": "link_opened",
+  "crm_stage_recommended": "Follow_Up_Hot",
+  "do_not_contact": false,
+  "compliance_summary": {
+    "gate_triggered": false,
+    "flags": [
+      "refund stated without conditions (minor)"
+    ]
+  },
+  "next_best_action": {
+    "value": "CALL_NOW",
+    "secondary_actions": [
+      "MERGE_DUPLICATE (LEAD-811)"
+    ],
+    "owner": "counsellor",
+    "due": "Immediately; the 11:00 callback on 2026-11-03 is overdue with no call logged"
+  },
+  "note": {
+    "original_note": "will ask husband and tell tomorrow",
+    "clean_note": "Mother (Divya) likes the curriculum, the Rs 12,000 fee and the Tue-Thu 6 PM slot. Father decides together and handles card payment; he did not see the demo and will ask whether this fixes stage fear or is grammar tuition. Summary and link sent. Link opened twice (11-02 21:15). Callback promised 11-03 11:00, not logged.",
+    "note_quality": "vague"
+  },
+  "data_flags": [
+    "Payment-link engagement not reflected in CRM stage",
+    "Callback overdue with no call logged",
+    "Duplicate lead LEAD-811 routed to a different counsellor",
+    "Seat hold expired 2026-11-03 11:00 (authority UNVERIFIED)"
+  ],
+  "revenue_at_stake": {
+    "currency": "INR",
+    "amount": 12000,
+    "basis": "list price"
+  }
+}

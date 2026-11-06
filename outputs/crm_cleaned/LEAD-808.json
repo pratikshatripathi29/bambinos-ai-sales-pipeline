@@ -1,0 +1,57 @@
+{
+  "lead_id": "LEAD-808",
+  "lead_intent": {
+    "label": "Cold",
+    "score": 4,
+    "score_breakdown": [
+      {
+        "signal": "Engagement >= 4",
+        "points": 1,
+        "evidence": "evaluation 9008: 4"
+      }
+    ]
+  },
+  "primary_objection": {
+    "bucket": "None",
+    "sub_type": null,
+    "status": "n/a",
+    "evidence": {
+      "timestamp": null,
+      "quote": null
+    }
+  },
+  "secondary_objections": [],
+  "demo_highlight": "Sara loved the 'Mystery Box' impromptu speaking game and asked for two extra rounds.",
+  "payment_status": "none",
+  "crm_stage_recommended": "Follow_Up_Cold",
+  "do_not_contact": false,
+  "compliance_summary": {
+    "gate_triggered": false,
+    "flags": []
+  },
+  "next_best_action": {
+    "value": "CALL_NOW",
+    "secondary_actions": [
+      "Ops: confirm class 108 price",
+      "audit the logged call"
+    ],
+    "owner": "counsellor",
+    "due": "2026-11-04 (Doha hours)"
+  },
+  "note": {
+    "original_note": "ok",
+    "clean_note": "Demo went well (engagement 4/5, asked for 2 extra rounds of Mystery Box). A call is logged 11-02 20:10 but no transcript exists and the note has no content. No follow-up scheduled.",
+    "note_quality": "vague"
+  },
+  "data_flags": [
+    "Call logged but no transcript (un-auditable)",
+    "Class 108 not in the pricing policy",
+    "Owner (212) has a critical compliance incident on LEAD-803: review this call",
+    "Intent is a floor, not a verdict (no call evidence)"
+  ],
+  "revenue_at_stake": {
+    "currency": "AED",
+    "amount": 1200,
+    "basis": "proxy"
+  }
+}

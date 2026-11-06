@@ -1,0 +1,89 @@
+{
+  "lead_id": "LEAD-801",
+  "status": "SEND_SEQUENCE",
+  "preflight": [
+    {
+      "check": "A_do_not_contact",
+      "result": "pass",
+      "reason": "No request"
+    },
+    {
+      "check": "B_already_paid",
+      "result": "pass",
+      "reason": "Order 99401 unpaid (link opened twice)"
+    },
+    {
+      "check": "C_compliance_gate",
+      "result": "pass",
+      "reason": "Gate not triggered"
+    },
+    {
+      "check": "D_academic_hold",
+      "result": "pass",
+      "reason": "No batch mismatch"
+    },
+    {
+      "check": "E_failed_payment",
+      "result": "pass",
+      "reason": "No failed payment"
+    },
+    {
+      "check": "F_standard",
+      "result": "apply",
+      "reason": "Conversion sequence, Spouse_Decision variant"
+    }
+  ],
+  "stop_reason": null,
+  "stop_alert": null,
+  "language": "English",
+  "messages": [
+    {
+      "touch": 1,
+      "send_day_offset": 0,
+      "send_window_local": "09:00-20:00",
+      "purpose": "Forwardable summary for the absent father",
+      "text": "Hi Divya ma'am 🙂 A quick note you can forward to Aarav's dad. In the trial Aarav froze at first, then Ms. Rhea's 3-step 'Superhero Hook' got him speaking for 45 seconds about a space rescue, using words like 'asteroid' and 'gravity'. It's a speaking-confidence class in a small group (max 6), not grammar tuition.",
+      "word_count": 55,
+      "demo_highlight_used": "Superhero Hook space story",
+      "objection_addressed": "Spouse_Decision: father's question 'grammar tuition or stage fear?'",
+      "send_mode": "counsellor_approve",
+      "blocked_reason": null,
+      "approver_checklist": [
+        "Confirm the 11:00 callback has not already happened (if it did, adapt)",
+        "Facts match evaluation 9001"
+      ]
+    },
+    {
+      "touch": 2,
+      "send_day_offset": 2,
+      "send_window_local": "09:00-20:00",
+      "purpose": "Invite the decision-maker directly",
+      "text": "Hi Divya ma'am, if Aarav's dad would like to ask questions himself, I can do a 10-minute call with both of you, at whatever time suits him. Just share a time and I'll call. No pressure on the enrollment link.",
+      "word_count": 40,
+      "demo_highlight_used": null,
+      "objection_addressed": "Spouse_Decision",
+      "send_mode": "counsellor_approve",
+      "blocked_reason": null,
+      "approver_checklist": [
+        "Parent has not replied to touch 1",
+        "No offer or deadline mentioned"
+      ]
+    },
+    {
+      "touch": 3,
+      "send_day_offset": 5,
+      "send_window_local": "09:00-20:00",
+      "purpose": "Easy close",
+      "text": "Hi Divya ma'am, just checking in. If the Tuesday-Thursday evening batch still suits Aarav, I can confirm current seat availability for you. And if now isn't the right time, that's completely fine. Just let me know and I'll keep in touch lightly.",
+      "word_count": 42,
+      "demo_highlight_used": null,
+      "objection_addressed": "Spouse_Decision",
+      "send_mode": "counsellor_approve",
+      "blocked_reason": null,
+      "approver_checklist": [
+        "Check real seat availability before sending"
+      ]
+    }
+  ],
+  "manager_note": "The promised seat hold expired 2026-11-03 11:00 and no callback is logged. Call first if possible; the sequence supports the call."
+}

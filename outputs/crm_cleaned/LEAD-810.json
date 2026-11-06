@@ -1,0 +1,56 @@
+{
+  "lead_id": "LEAD-810",
+  "lead_intent": {
+    "label": "Cold",
+    "score": 4,
+    "score_breakdown": [
+      {
+        "signal": "Engagement >= 4",
+        "points": 1,
+        "evidence": "evaluation 9010: 4"
+      }
+    ]
+  },
+  "primary_objection": {
+    "bucket": "None",
+    "sub_type": null,
+    "status": "n/a",
+    "evidence": {
+      "timestamp": null,
+      "quote": null
+    }
+  },
+  "secondary_objections": [],
+  "demo_highlight": "Myra mastered the 'thumbs-up b and d' trick in 5 minutes and read 4 sentences aloud.",
+  "payment_status": "none",
+  "crm_stage_recommended": "Follow_Up_Cold",
+  "do_not_contact": false,
+  "compliance_summary": {
+    "gate_triggered": false,
+    "flags": []
+  },
+  "next_best_action": {
+    "value": "CALL_NOW",
+    "secondary_actions": [
+      "fix follow-up date",
+      "audit the logged call"
+    ],
+    "owner": "counsellor",
+    "due": "2026-11-04 (IST)"
+  },
+  "note": {
+    "original_note": "cb",
+    "clean_note": "Positive demo (engagement 4/5). A call is logged 11-02 12:30 with no transcript; note 'cb' has no content and the follow-up date (11-01 10:00) is before the call, so no valid follow-up exists.",
+    "note_quality": "vague"
+  },
+  "data_flags": [
+    "next_followup_at earlier than the demo and last call",
+    "Call logged but no transcript",
+    "Intent is a floor, not a verdict (no call evidence)"
+  ],
+  "revenue_at_stake": {
+    "currency": "INR",
+    "amount": 9500,
+    "basis": "list price"
+  }
+}

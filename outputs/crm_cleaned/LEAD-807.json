@@ -1,0 +1,58 @@
+{
+  "lead_id": "LEAD-807",
+  "lead_intent": {
+    "label": "Warm",
+    "score": 5,
+    "score_breakdown": [
+      {
+        "signal": "Engagement >= 4",
+        "points": 1,
+        "evidence": "evaluation 9007: 5"
+      },
+      {
+        "signal": "Asked logistics (when regular batch starts)",
+        "points": 1,
+        "evidence": "evaluation 9007 magic moment"
+      }
+    ]
+  },
+  "primary_objection": {
+    "bucket": "None",
+    "sub_type": null,
+    "status": "n/a",
+    "evidence": {
+      "timestamp": null,
+      "quote": null
+    }
+  },
+  "secondary_objections": [],
+  "demo_highlight": "Arjun scored 5/5 on the live Olympiad inference challenge and asked when the regular batch starts.",
+  "payment_status": "none",
+  "crm_stage_recommended": "Follow_Up_Warm",
+  "do_not_contact": false,
+  "compliance_summary": {
+    "gate_triggered": false,
+    "flags": []
+  },
+  "next_best_action": {
+    "value": "CALL_NOW",
+    "secondary_actions": [],
+    "owner": "counsellor",
+    "due": "Within 2 hours of opening (demo ended 2026-11-02 15:30 IST)"
+  },
+  "note": {
+    "original_note": null,
+    "clean_note": "High-engagement demo (5/5). Child asked when the regular batch starts. No call has been made and no follow-up is scheduled.",
+    "note_quality": "missing"
+  },
+  "data_flags": [
+    "Demo completed with no call and no follow-up",
+    "Intent score capped by lack of call evidence (confidence low)",
+    "Counsellor 209 also holds uncalled LEAD-812"
+  ],
+  "revenue_at_stake": {
+    "currency": "INR",
+    "amount": 13500,
+    "basis": "list price"
+  }
+}

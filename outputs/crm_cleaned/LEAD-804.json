@@ -1,0 +1,58 @@
+{
+  "lead_id": "LEAD-804",
+  "lead_intent": {
+    "label": "Won",
+    "score": 10,
+    "score_breakdown": [
+      {
+        "signal": "Paid override",
+        "points": 0,
+        "evidence": "order 99404 Paid 2026-11-03 11:40:12"
+      }
+    ]
+  },
+  "primary_objection": {
+    "bucket": "Schedule_Conflict",
+    "sub_type": "extracurricular",
+    "status": "resolved",
+    "evidence": {
+      "timestamp": "01:18",
+      "quote": "she cannot make weekday evenings"
+    }
+  },
+  "secondary_objections": [],
+  "demo_highlight": "Meera linked the Gita idea of 'Samatvam' (staying balanced under pressure) to her gymnastics balance-beam routine and wrote the meaning in her notebook.",
+  "payment_status": "paid",
+  "crm_stage_recommended": "Enrolled_Paid",
+  "do_not_contact": false,
+  "compliance_summary": {
+    "gate_triggered": false,
+    "flags": [
+      "refund stated without conditions (minor)"
+    ]
+  },
+  "next_best_action": {
+    "value": "ONBOARD_PAID",
+    "secondary_actions": [
+      "CANCEL follow-up 2026-11-03 20:00",
+      "Ops: confirm seat in Sat-Sun 9:30 AM PST batch"
+    ],
+    "owner": "system",
+    "due": "Immediately"
+  },
+  "note": {
+    "original_note": "wants weekend batch sent link",
+    "clean_note": "Parent sold on Little Yogi (character building). Weekday gymnastics conflict solved with the Sat-Sun 9:30 AM PST batch. Paid USD 265 on 11-03 11:40 PST (order 99404). Needs onboarding, not follow-up.",
+    "note_quality": "accurate"
+  },
+  "data_flags": [
+    "Stale stage: Payment_Link_Sent although paid",
+    "Chase task scheduled 20:00 for a paying customer",
+    "Teacher-note quote used by rep not in evaluation (UNVERIFIED)"
+  ],
+  "revenue_at_stake": {
+    "currency": "USD",
+    "amount": 265,
+    "basis": "agreed net"
+  }
+}

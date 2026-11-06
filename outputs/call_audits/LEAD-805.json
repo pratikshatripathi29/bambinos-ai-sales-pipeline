@@ -1,0 +1,224 @@
+{
+  "lead_id": "LEAD-805",
+  "call_id": "7005",
+  "counsellor": "Pooja M*** (215)",
+  "criteria": [
+    {
+      "name": "rapport_child_praise",
+      "weight": 10,
+      "rating": 5,
+      "evidence": [
+        {
+          "timestamp": "00:46",
+          "speaker": "COUNSELLOR",
+          "quote": "toh Kabir ne \"Should homework be banned?\" topic par poore 60 seconds bina ek bhi \"umm\" bole speech di!"
+        }
+      ],
+      "reasoning": "Within the first minute, cites the exact demo moment from the evaluation."
+    },
+    {
+      "name": "diagnosing_learning_gap",
+      "weight": 20,
+      "rating": 5,
+      "evidence": [
+        {
+          "timestamp": "00:24",
+          "speaker": "PARENT",
+          "quote": "woh dimaag mein Hindi se English translate karta hai"
+        },
+        {
+          "timestamp": "00:46",
+          "speaker": "COUNSELLOR",
+          "quote": "spoken fluency mein woh mental translation ki wajah se rukta hai"
+        }
+      ],
+      "reasoning": "Parent describes mental translation; rep reflects the same diagnosis from the educator's report."
+    },
+    {
+      "name": "pitch_before_price",
+      "weight": 15,
+      "rating": 5,
+      "evidence": [
+        {
+          "timestamp": "01:40",
+          "speaker": "COUNSELLOR",
+          "quote": "Isiliye Bambinos mein hum strictly 6-kids small group rakhte hain jahan har bache ko peer audience milti hai"
+        }
+      ],
+      "reasoning": "Method and format explained well before the fee discussion."
+    },
+    {
+      "name": "objection_handling",
+      "weight": 20,
+      "rating": 4,
+      "evidence": [
+        {
+          "timestamp": "02:10",
+          "speaker": "PARENT",
+          "quote": "Yeh baat toh aapki sahi hai, akele teacher ke saamne bolne se stage fear nahi khulega."
+        },
+        {
+          "timestamp": "02:42",
+          "speaker": "PARENT",
+          "quote": "Accha, class waste nahi hogi phir theek hai."
+        },
+        {
+          "timestamp": "03:28",
+          "speaker": "PARENT",
+          "quote": "Rs. 5,400 abhi aur Rs. 5,400 next month? Haan, yeh kaafi comfortable hai."
+        }
+      ],
+      "reasoning": "Handles competitor, exams and cash flow, each acknowledged by the parent. The mother's 'after exams' hesitation is not addressed directly."
+    },
+    {
+      "name": "trial_close_next_step",
+      "weight": 10,
+      "rating": 4,
+      "evidence": [
+        {
+          "timestamp": "03:28",
+          "speaker": "PARENT",
+          "quote": "main raat ko dinner ke baad UPI se kar dunga"
+        },
+        {
+          "timestamp": "03:44",
+          "speaker": "COUNSELLOR",
+          "quote": "Main abhi WhatsApp par link aur Ms. Rhea ka feedback note bhej rahi hoon."
+        }
+      ],
+      "reasoning": "Parent commits to pay that night. No check-in time set."
+    },
+    {
+      "name": "compliance_honesty",
+      "weight": 20,
+      "rating": 3,
+      "evidence": [
+        {
+          "timestamp": "01:40",
+          "speaker": "COUNSELLOR",
+          "quote": "price bhi 1-on-1 se almost half padta hai"
+        },
+        {
+          "timestamp": "02:20",
+          "speaker": "COUNSELLOR",
+          "quote": "hamare portal par 'Exam Pause / Reschedule' button hota hai"
+        }
+      ],
+      "reasoning": "Discount and installment match policy. A competitor price comparison, an exam-pause feature and a weekend batch cannot be verified."
+    },
+    {
+      "name": "listening_talk_balance",
+      "weight": 5,
+      "rating": 5,
+      "evidence": [
+        {
+          "timestamp": "01:14",
+          "speaker": "PARENT",
+          "quote": "mummy bol rahi hain exams ke baad dekhenge"
+        }
+      ],
+      "reasoning": "Rep talk 48%; every parent point gets a direct response."
+    }
+  ],
+  "raw_score": 86.0,
+  "gate_triggered": false,
+  "final_score": 86.0,
+  "band": "Excellent",
+  "gaming_detected": false,
+  "claims_check": [
+    {
+      "timestamp": "03:00",
+      "claim": "10% discount: Rs. 12,000 to Rs. 10,800",
+      "verdict": "VERIFIED",
+      "source": "POLICY",
+      "note": "Rs. 1,200 equals the cap for class 104"
+    },
+    {
+      "timestamp": "03:00",
+      "claim": "2 installments: 50% now, 50% at day 30, zero extra interest",
+      "verdict": "VERIFIED",
+      "source": "POLICY",
+      "note": "Matches the installment rule; order 99405 arithmetic consistent"
+    },
+    {
+      "timestamp": "01:40",
+      "claim": "Price is almost half of 1-on-1 (PlanetSpark)",
+      "verdict": "UNVERIFIED",
+      "source": "none",
+      "note": "No competitor price data"
+    },
+    {
+      "timestamp": "02:20",
+      "claim": "'Exam Pause / Reschedule' button on the portal",
+      "verdict": "UNVERIFIED",
+      "source": "none",
+      "note": "Feature not documented in inputs"
+    },
+    {
+      "timestamp": "02:20",
+      "claim": "Sat-Sun 11 AM batch with Ms. Rhea",
+      "verdict": "UNVERIFIED",
+      "source": "none",
+      "note": "No batch roster in inputs"
+    },
+    {
+      "timestamp": "00:46",
+      "claim": "PEEL method; 60 seconds without filler",
+      "verdict": "VERIFIED",
+      "source": "DEMO_EVAL",
+      "note": "Matches evaluation row 9005"
+    }
+  ],
+  "compliance_flags": [
+    {
+      "rule": "Unverified competitor price comparison",
+      "severity": "minor",
+      "timestamp": "01:40",
+      "quote": "price bhi 1-on-1 se almost half padta hai"
+    },
+    {
+      "rule": "Unverified product feature",
+      "severity": "minor",
+      "timestamp": "02:20",
+      "quote": "hamare portal par 'Exam Pause / Reschedule' button hota hai"
+    }
+  ],
+  "discount_check": {
+    "standard_fee": 12000,
+    "discount_offered": 1200,
+    "discount_pct": 10.0,
+    "cap_pct": 10,
+    "within_cap": true
+  },
+  "coaching": {
+    "strengths": [
+      {
+        "timestamp": "00:46",
+        "text": "Opening with the PEEL moment and 'no umm' made the parent feel his son was seen. You also matched his Hinglish naturally."
+      },
+      {
+        "timestamp": "01:40",
+        "text": "You turned the competitor comparison into a format question (peer audience vs 1-on-1) without criticising anyone."
+      }
+    ],
+    "fixes": [
+      {
+        "timestamp": "01:40",
+        "text": "Only quote competitor comparisons you can back with data.",
+        "better_line": "Hamare yahan 6 bachon ka group hai, isliye har bache ko bolne ke liye audience milti hai. Aap fee ke baare mein jo humne bataya, usi se compare kar sakte hain."
+      },
+      {
+        "timestamp": "03:44",
+        "text": "Set a check-in time, and ask about the mother's 'after exams' view directly.",
+        "better_line": "Sir, kya main kal subah 10 baje check kar loon ki payment ho gaya? Aur agar mummy ji ko kuch poochna ho, toh main unse bhi baat kar sakti hoon."
+      }
+    ],
+    "next_call_drill": "Before the call ends, name the time you will check payment, and ask once about any family member who was mentioned."
+  },
+  "parent_signals": {
+    "do_not_contact_requested": false,
+    "do_not_contact_quote": null,
+    "hostile_or_distressed": false
+  },
+  "missing_inputs": []
+}

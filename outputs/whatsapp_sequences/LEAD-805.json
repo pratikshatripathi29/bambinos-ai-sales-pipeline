@@ -1,0 +1,84 @@
+{
+  "lead_id": "LEAD-805",
+  "status": "SEND_PAYMENT_RECOVERY",
+  "preflight": [
+    {
+      "check": "A_do_not_contact",
+      "result": "pass",
+      "reason": "No request"
+    },
+    {
+      "check": "B_already_paid",
+      "result": "pass",
+      "reason": "Order 99405 Payment_Failed"
+    },
+    {
+      "check": "C_compliance_gate",
+      "result": "pass",
+      "reason": "Gate not triggered"
+    },
+    {
+      "check": "D_academic_hold",
+      "result": "pass",
+      "reason": "None"
+    },
+    {
+      "check": "E_failed_payment",
+      "result": "apply",
+      "reason": "Bank_OTP_Timeout_On_UPI_Mandate: payment recovery sequence"
+    }
+  ],
+  "stop_reason": null,
+  "stop_alert": null,
+  "language": "Hinglish",
+  "messages": [
+    {
+      "touch": 1,
+      "send_day_offset": 0,
+      "send_window_local": "09:00-20:00",
+      "purpose": "Calm no-blame recovery with a fresh one-time link (next morning)",
+      "text": "Namaste Rajesh sir 🙂 Kal raat Rs. 5,400 ka payment bank OTP time-out ki wajah se complete nahi ho paya, aapki koi galti nahi. Yeh naya one-time link hai: [PAYMENT_LINK]. UPI ya card, jo aapko aasaan lage. Kabir ne PEEL se 60 second bina 'umm' ke bola tha, hum usi flow ko aage badhayenge.",
+      "word_count": 54,
+      "demo_highlight_used": "PEEL method, 60 seconds without 'umm'",
+      "objection_addressed": "Payment failure (not an objection)",
+      "send_mode": "auto_send",
+      "blocked_reason": null,
+      "approver_checklist": [
+        "Link is a one-time link, not a mandate",
+        "Amount is Rs. 5,400 as agreed (order 99405)"
+      ]
+    },
+    {
+      "touch": 2,
+      "send_day_offset": 2,
+      "send_window_local": "09:00-20:00",
+      "purpose": "Offer help only if still unpaid",
+      "text": "Rajesh sir, agar payment link mein ab bhi dikkat aa rahi ho, toh main 5 minute ki call par help kar sakti hoon, ya aap card ya net banking se try kar sakte hain. Jo aapko comfortable ho.",
+      "word_count": 38,
+      "demo_highlight_used": null,
+      "objection_addressed": "Payment friction",
+      "send_mode": "counsellor_approve",
+      "blocked_reason": null,
+      "approver_checklist": [
+        "Confirm payment is still unpaid"
+      ]
+    },
+    {
+      "touch": 3,
+      "send_day_offset": 5,
+      "send_window_local": "09:00-20:00",
+      "purpose": "Respect the exam timing",
+      "text": "Rajesh sir, Kabir ke exams 15 tarikh se shuru ho rahe hain. Agar aap exams ke baad shuru karna chahein, toh bas bata dijiyega, main aapke hisaab se timing dekh lungi. Koi jaldi nahi hai.",
+      "word_count": 35,
+      "demo_highlight_used": null,
+      "objection_addressed": "Schedule_Conflict / exam_period + mother's 'after exams' view",
+      "send_mode": "counsellor_approve",
+      "blocked_reason": null,
+      "approver_checklist": [
+        "Only if still unpaid",
+        "Check batch availability if he chooses to wait"
+      ]
+    }
+  ],
+  "manager_note": "Highest-ROI message in the batch: a committed buyer lost to an OTP timeout. Day 0 can auto-send because the parent already agreed to the amount and no new offer is made."
+}

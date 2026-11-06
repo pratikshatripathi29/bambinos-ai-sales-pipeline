@@ -1,0 +1,26 @@
+{
+  "lead_id": "LEAD-803",
+  "status": "STOP",
+  "preflight": [
+    {
+      "check": "A_do_not_contact",
+      "result": "stop",
+      "reason": "[03:54] 'Do not call me again!'"
+    }
+  ],
+  "stop_reason": "DO_NOT_CONTACT",
+  "stop_alert": {
+    "severity": "critical",
+    "message_to_manager": "Parent of LEAD-803 asked not to be contacted after the counsellor gave an unauthorized Rank-1 guarantee, a 6-month refund promise, a 42.1% discount (cap 10%) and a threat to blacklist a 7-year-old. These were stated verbally and may be repeated to others. Escalate to the Head of Sales. Default is no outreach; any service-recovery apology is a manager decision, must not contain a sales pitch, and should be a single written message or skipped.",
+    "system_actions": [
+      "Set do_not_contact = true on LEAD-803",
+      "Cancel follow-up scheduled 2026-11-03 18:00",
+      "Void payment link for order 99403",
+      "Block counsellor 212 from this lead",
+      "Queue a review of all other calls by counsellor 212 (including LEAD-808)"
+    ]
+  },
+  "language": "English",
+  "messages": [],
+  "manager_note": "No WhatsApp is generated. The right outcome here is silence plus accountability."
+}

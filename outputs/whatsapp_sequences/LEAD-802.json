@@ -1,0 +1,90 @@
+{
+  "lead_id": "LEAD-802",
+  "status": "SEND_SEQUENCE",
+  "preflight": [
+    {
+      "check": "A_do_not_contact",
+      "result": "pass",
+      "reason": "No request"
+    },
+    {
+      "check": "B_already_paid",
+      "result": "pass",
+      "reason": "Order 99402 unpaid, link not clicked"
+    },
+    {
+      "check": "C_compliance_gate",
+      "result": "apply",
+      "reason": "Gate triggered (policy 205 price dump): manager_approve on all messages; release the false deadline; no discount"
+    },
+    {
+      "check": "D_academic_hold",
+      "result": "pass",
+      "reason": "None"
+    },
+    {
+      "check": "E_failed_payment",
+      "result": "pass",
+      "reason": "None"
+    },
+    {
+      "check": "F_standard",
+      "result": "apply",
+      "reason": "Conversion sequence, Competitor_Comparison (local tutor) variant"
+    }
+  ],
+  "stop_reason": null,
+  "stop_alert": null,
+  "language": "English",
+  "messages": [
+    {
+      "touch": 1,
+      "send_day_offset": 0,
+      "send_window_local": "09:00-20:00",
+      "purpose": "Release the deadline; answer the method question the rep skipped",
+      "text": "Hi Amina ma'am, thank you for your time today. Please ignore the 30-minute link deadline; there's no rush. You asked what method Mr. Vikram used: Zoya solved two fraction word problems from the British curriculum on her own with our visual Bar-Model, and said it was 'so easy!'",
+      "word_count": 48,
+      "demo_highlight_used": "Bar-Model fraction word puzzles",
+      "objection_addressed": "Competitor_Comparison / local_tutor: the unanswered method question",
+      "send_mode": "manager_approve",
+      "blocked_reason": null,
+      "approver_checklist": [
+        "No discount mentioned",
+        "Facts match evaluation 9002",
+        "Deadline is explicitly withdrawn"
+      ]
+    },
+    {
+      "touch": 2,
+      "send_day_offset": 2,
+      "send_window_local": "09:00-20:00",
+      "purpose": "Explain the method without criticising the tutor",
+      "text": "Hi Amina ma'am, Zoya's challenge is guessing the operation in story problems. The Bar-Model has her draw the problem first, then choose the operation. Would you like a short sample problem solved this way, to compare with what her tutor does?",
+      "word_count": 41,
+      "demo_highlight_used": null,
+      "objection_addressed": "Competitor_Comparison / local_tutor",
+      "send_mode": "manager_approve",
+      "blocked_reason": null,
+      "approver_checklist": [
+        "Sample problem prepared by the Maths team",
+        "No criticism of the tutor"
+      ]
+    },
+    {
+      "touch": 3,
+      "send_day_offset": 5,
+      "send_window_local": "09:00-20:00",
+      "purpose": "Easy close with a choice",
+      "text": "Hi Amina ma'am, no pressure at all. If it helps, I can arrange a short call with our academic team to explain the method, or you can continue with her tutor and revisit whenever you like. Whatever works best for Zoya.",
+      "word_count": 41,
+      "demo_highlight_used": null,
+      "objection_addressed": "Competitor_Comparison / local_tutor",
+      "send_mode": "manager_approve",
+      "blocked_reason": null,
+      "approver_checklist": [
+        "Academic team availability confirmed"
+      ]
+    }
+  ],
+  "manager_note": "Consider reassigning this lead to a different counsellor. Price-led follow-up would repeat the original mistake."
+}

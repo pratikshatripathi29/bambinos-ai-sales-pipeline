@@ -1,0 +1,257 @@
+{
+  "lead_id": "LEAD-803",
+  "call_id": "7003",
+  "counsellor": "Amitabh R*** (212)",
+  "criteria": [
+    {
+      "name": "rapport_child_praise",
+      "weight": 10,
+      "rating": 1,
+      "evidence": [
+        {
+          "timestamp": "00:06",
+          "speaker": "COUNSELLOR",
+          "quote": "Vihaan has been shortlisted for our super-exclusive Elite Phonics Accelerator batch!"
+        }
+      ],
+      "reasoning": "No reference to the child's demo; opens with an unverifiable 'shortlist' claim."
+    },
+    {
+      "name": "diagnosing_learning_gap",
+      "weight": 20,
+      "rating": 1,
+      "evidence": [
+        {
+          "timestamp": "01:45",
+          "speaker": "PARENT",
+          "quote": "why was he reading the word \"train\" as \"truck\" at the start of the class?"
+        },
+        {
+          "timestamp": "02:08",
+          "speaker": "COUNSELLOR",
+          "quote": "forget about screen time and forget about \"train\" or \"truck\"!"
+        }
+      ],
+      "reasoning": "Parent's two concerns are explicitly dismissed. The evaluation shows the exact fix (tap-and-slide blending) and it was never mentioned."
+    },
+    {
+      "name": "pitch_before_price",
+      "weight": 15,
+      "rating": 1,
+      "evidence": [
+        {
+          "timestamp": "00:06",
+          "speaker": "COUNSELLOR",
+          "quote": "[monologues non-stop for 95 seconds about company awards]"
+        },
+        {
+          "timestamp": "02:08",
+          "speaker": "COUNSELLOR",
+          "quote": "Once you pay Rs. 9,500 and enroll Vihaan today"
+        }
+      ],
+      "reasoning": "Company monologue, then price tied to a guarantee. No method."
+    },
+    {
+      "name": "objection_handling",
+      "weight": 20,
+      "rating": 1,
+      "evidence": [
+        {
+          "timestamp": "02:35",
+          "speaker": "PARENT",
+          "quote": "That sounds like a fake sales promise."
+        },
+        {
+          "timestamp": "02:54",
+          "speaker": "COUNSELLOR",
+          "quote": "off the record, don't look at the website policy"
+        }
+      ],
+      "reasoning": "Answers doubt with a larger false promise and tells the parent to ignore policy."
+    },
+    {
+      "name": "trial_close_next_step",
+      "weight": 10,
+      "rating": 1,
+      "evidence": [
+        {
+          "timestamp": "03:30",
+          "speaker": "COUNSELLOR",
+          "quote": "you must do the UPI payment in the next 5 minutes while staying on this call"
+        }
+      ],
+      "reasoning": "Threat-based deadline."
+    },
+    {
+      "name": "compliance_honesty",
+      "weight": 20,
+      "rating": 1,
+      "evidence": [
+        {
+          "timestamp": "02:08",
+          "speaker": "COUNSELLOR",
+          "quote": "he will come Rank 1 in his school English exam"
+        }
+      ],
+      "reasoning": "Multiple critical violations (see flags)."
+    },
+    {
+      "name": "listening_talk_balance",
+      "weight": 5,
+      "rating": 1,
+      "evidence": [
+        {
+          "timestamp": "03:54",
+          "speaker": "PARENT",
+          "quote": "you are talking like a scam call center!"
+        }
+      ],
+      "reasoning": "Rep talk 84%; parent ends the call."
+    }
+  ],
+  "raw_score": 20.0,
+  "gate_triggered": true,
+  "final_score": 20.0,
+  "band": "Critical",
+  "gaming_detected": false,
+  "claims_check": [
+    {
+      "timestamp": "02:08",
+      "claim": "Vihaan will read 300-page Harry Potter novels in 30 days and come Rank 1",
+      "verdict": "VIOLATION",
+      "source": "POLICY",
+      "note": "Policy 101: never promise exam ranks"
+    },
+    {
+      "timestamp": "02:54",
+      "claim": "100% refund anytime in 6 months even after 48 classes",
+      "verdict": "VIOLATION",
+      "source": "POLICY",
+      "note": "Policy: 14 days / up to 4 classes; pro-rata after"
+    },
+    {
+      "timestamp": "03:30",
+      "claim": "Flat Rs. 4,000 off (link shows Rs. 5,500)",
+      "verdict": "VIOLATION",
+      "source": "POLICY",
+      "note": "42.1% vs 10% cap (Rs. 950)"
+    },
+    {
+      "timestamp": "03:30",
+      "claim": "1-on-1 private class for group price",
+      "verdict": "VIOLATION",
+      "source": "POLICY",
+      "note": "Not a catalog option; the policy bans claiming 1-on-1 for group plans"
+    },
+    {
+      "timestamp": "03:30",
+      "claim": "System will permanently blacklist the student ID",
+      "verdict": "VIOLATION",
+      "source": "POLICY",
+      "note": "Threat; false"
+    },
+    {
+      "timestamp": "00:06",
+      "claim": "Taught 50,000+ kids across 25 countries; Elite Phonics Accelerator shortlist",
+      "verdict": "UNVERIFIED",
+      "source": "none",
+      "note": "Not in inputs; shortlist appears to be invented scarcity"
+    },
+    {
+      "timestamp": "02:08",
+      "claim": "Price Rs. 9,500",
+      "verdict": "VERIFIED",
+      "source": "POLICY",
+      "note": "Class 101 INR 9,500"
+    }
+  ],
+  "compliance_flags": [
+    {
+      "rule": "Policy 101: never promise exam ranks",
+      "severity": "critical",
+      "timestamp": "02:08",
+      "quote": "he will come Rank 1 in his school English exam"
+    },
+    {
+      "rule": "Policy 101: never promise a 100% refund anytime in 6 months",
+      "severity": "critical",
+      "timestamp": "02:54",
+      "quote": "I am giving you a 100% no-questions-asked full refund anytime in 6 months!"
+    },
+    {
+      "rule": "Policy: never advise ignoring written policy",
+      "severity": "critical",
+      "timestamp": "02:54",
+      "quote": "off the record, don't look at the website policy"
+    },
+    {
+      "rule": "Policy 101: never offer more than 10% without a Team Lead code",
+      "severity": "critical",
+      "timestamp": "03:30",
+      "quote": "flat Rs. 4,000 off"
+    },
+    {
+      "rule": "Circumventing discount controls",
+      "severity": "critical",
+      "timestamp": "03:30",
+      "quote": "I hacked my manager's VIP scholarship quota"
+    },
+    {
+      "rule": "Claiming 1-on-1 for a group price",
+      "severity": "critical",
+      "timestamp": "03:30",
+      "quote": "I will even make it a 1-on-1 private class for the price of a group batch!"
+    },
+    {
+      "rule": "Threat about the child's account",
+      "severity": "critical",
+      "timestamp": "03:30",
+      "quote": "permanently blacklist Vihaan's student ID forever"
+    },
+    {
+      "rule": "Unverified credentials / scarcity",
+      "severity": "minor",
+      "timestamp": "00:06",
+      "quote": "we have taught 50,000+ kids across 25 countries"
+    }
+  ],
+  "discount_check": {
+    "standard_fee": 9500,
+    "discount_offered": 4000,
+    "discount_pct": 42.1,
+    "cap_pct": 10,
+    "within_cap": false
+  },
+  "coaching": {
+    "strengths": [
+      {
+        "timestamp": "00:06",
+        "text": "You opened with energy and addressed the parent by name. Energy is an asset when it is pointed at listening."
+      },
+      {
+        "timestamp": "03:30",
+        "text": "You knew a payment link and a discount mechanism existed. Learning the approval-code route would let you use it legitimately."
+      }
+    ],
+    "fixes": [
+      {
+        "timestamp": "02:08",
+        "text": "Answer the parent's two doubts with the educator's evidence. Never promise outcomes.",
+        "better_line": "That train-and-truck guess is something Ms. Simran worked on today. Vihaan blended 'train', 'brain' and 'green' correctly with tap-and-slide fingers. May I show you how the classes build on that?"
+      },
+      {
+        "timestamp": "03:30",
+        "text": "Never state a policy you cannot back up in writing. Use only the 10% cap, with a Team Lead code if needed.",
+        "better_line": "Our policy is a full refund in the first 14 days, up to 4 classes attended. Let me explain exactly how it works."
+      }
+    ],
+    "next_call_drill": "Manager 1:1 required (not an automated tip). Practice: ask one question, then repeat the parent's words before answering."
+  },
+  "parent_signals": {
+    "do_not_contact_requested": true,
+    "do_not_contact_quote": "Do not call me again!",
+    "hostile_or_distressed": true
+  },
+  "missing_inputs": []
+}

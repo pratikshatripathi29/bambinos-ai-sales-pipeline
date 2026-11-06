@@ -1,0 +1,71 @@
+{
+  "lead_id": "LEAD-806",
+  "lead_intent": {
+    "label": "Cold",
+    "score": 1,
+    "score_breakdown": [
+      {
+        "signal": "Asked logistics (micro-batch availability)",
+        "points": 1,
+        "evidence": "[02:18] Do you have an age-5-to-6 micro-batch or not?"
+      },
+      {
+        "signal": "Engagement <= 2",
+        "points": -1,
+        "evidence": "evaluation 9006: 2"
+      },
+      {
+        "signal": "Unresolved objection",
+        "points": -2,
+        "evidence": "[01:32] four older 8- and 9-year-old boys"
+      }
+    ]
+  },
+  "primary_objection": {
+    "bucket": "Child_Not_Interested",
+    "sub_type": "demo_batch_mismatch",
+    "status": "unresolved",
+    "evidence": {
+      "timestamp": "01:32",
+      "quote": "She got intimidated, turned off her camera at minute 15"
+    }
+  },
+  "secondary_objections": [],
+  "demo_highlight": "Ananya giggled and enjoyed the first 10 minutes, capturing the dragon's treasure chest with the Knight's L-shaped jump.",
+  "payment_status": "none",
+  "crm_stage_recommended": "Academic_Hold",
+  "do_not_contact": false,
+  "compliance_summary": {
+    "gate_triggered": true,
+    "flags": [
+      "Policy 401: pushed standard batch after 6-year-old was overwhelmed",
+      "pressure ('force her')",
+      "dismissive language",
+      "rubric gaming",
+      "false urgency"
+    ]
+  },
+  "next_best_action": {
+    "value": "ESCALATE_MANAGER",
+    "secondary_actions": [
+      "ACADEMIC_TEAM_CONTACT: offer complimentary 1-on-1 bridge session or age 5-6 micro-batch (max 3)"
+    ],
+    "owner": "manager",
+    "due": "2026-11-04 12:00 IST"
+  },
+  "note": {
+    "original_note": "kid did not like demo",
+    "clean_note": "Child (6) enjoyed the first 10 minutes, then was overwhelmed by four older boys. Parent will enroll only if Academic confirms an age 5-6 micro-batch or a calm 1-on-1 starter. Policy 401 allows a complimentary bridge session. Not 'child not interested'.",
+    "note_quality": "misleading"
+  },
+  "data_flags": [
+    "Intent score 1 is a limit of the scoring model: the parent stated a clear condition for enrolling (recoverable). Proposed v2 signal: 'parent states a fixable condition' +2",
+    "Recommended track 'Unbox Chess Little Starters' has no catalog price",
+    "No follow-up scheduled"
+  ],
+  "revenue_at_stake": {
+    "currency": "INR",
+    "amount": 11000,
+    "basis": "proxy"
+  }
+}

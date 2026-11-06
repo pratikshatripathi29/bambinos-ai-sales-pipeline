@@ -1,0 +1,237 @@
+{
+  "lead_id": "LEAD-801",
+  "call_id": "7001",
+  "counsellor": "Rohan S*** (204)",
+  "criteria": [
+    {
+      "name": "rapport_child_praise",
+      "weight": 10,
+      "rating": 5,
+      "evidence": [
+        {
+          "timestamp": "00:08",
+          "speaker": "COUNSELLOR",
+          "quote": "did you see that huge smile on his face at the end when he finished his space superhero story?"
+        },
+        {
+          "timestamp": "00:46",
+          "speaker": "COUNSELLOR",
+          "quote": "he used words like \"asteroid\" and \"gravity\" on his own!"
+        }
+      ],
+      "reasoning": "Opens with a specific demo moment that matches the evaluation (asteroid, gravity, space story)."
+    },
+    {
+      "name": "diagnosing_learning_gap",
+      "weight": 20,
+      "rating": 5,
+      "evidence": [
+        {
+          "timestamp": "00:24",
+          "speaker": "PARENT",
+          "quote": "he never raises his hand in class"
+        },
+        {
+          "timestamp": "00:46",
+          "speaker": "COUNSELLOR",
+          "quote": "you actually spotted the exact gap"
+        },
+        {
+          "timestamp": "03:18",
+          "speaker": "COUNSELLOR",
+          "quote": "what is the #1 question he usually asks before saying yes to a program for Aarav?"
+        }
+      ],
+      "reasoning": "Parent states the pain in her own words; rep reflects it back and links it to the evaluation (freezing, camera down)."
+    },
+    {
+      "name": "pitch_before_price",
+      "weight": 15,
+      "rating": 5,
+      "evidence": [
+        {
+          "timestamp": "01:55",
+          "speaker": "COUNSELLOR",
+          "quote": "Strictly maximum 6 kids per batch, ma'am, all aged 7 to 9."
+        },
+        {
+          "timestamp": "02:24",
+          "speaker": "PARENT",
+          "quote": "What are the batch timings and fee for the 6-month track?"
+        }
+      ],
+      "reasoning": "Explains small-group format and curriculum before the parent asks for the fee."
+    },
+    {
+      "name": "objection_handling",
+      "weight": 20,
+      "rating": 4,
+      "evidence": [
+        {
+          "timestamp": "03:48",
+          "speaker": "COUNSELLOR",
+          "quote": "If I send you a crisp 60-second summary on WhatsApp"
+        },
+        {
+          "timestamp": "04:06",
+          "speaker": "PARENT",
+          "quote": "Seeing what Aarav actually did today will convince him much faster than me explaining it."
+        }
+      ],
+      "reasoning": "Finds the absent father's exact question and arms the mother with a forwardable summary. Does not offer to include the father directly."
+    },
+    {
+      "name": "trial_close_next_step",
+      "weight": 10,
+      "rating": 4,
+      "evidence": [
+        {
+          "timestamp": "04:15",
+          "speaker": "COUNSELLOR",
+          "quote": "I'll provisionally hold that 6th seat in Ms. Rhea's Tue-Thu 6 PM batch until 11:00 AM tomorrow."
+        },
+        {
+          "timestamp": "04:30",
+          "speaker": "PARENT",
+          "quote": "Yes, 11 AM tomorrow works."
+        }
+      ],
+      "reasoning": "Specific next step with a time and owner. Seat hold is factual but its authority is not verifiable here."
+    },
+    {
+      "name": "compliance_honesty",
+      "weight": 20,
+      "rating": 3,
+      "evidence": [
+        {
+          "timestamp": "02:32",
+          "speaker": "COUNSELLOR",
+          "quote": "backed by our official 14-day, 100% risk-free refund policy"
+        }
+      ],
+      "reasoning": "Fee verified. Refund stated without the 4-class condition; several batch and curriculum details cannot be verified from the inputs."
+    },
+    {
+      "name": "listening_talk_balance",
+      "weight": 5,
+      "rating": 5,
+      "evidence": [
+        {
+          "timestamp": "03:18",
+          "speaker": "COUNSELLOR",
+          "quote": "both parents being aligned is super important"
+        }
+      ],
+      "reasoning": "Rep talk 46%; builds each answer on what the parent just said."
+    }
+  ],
+  "raw_score": 86.0,
+  "gate_triggered": false,
+  "final_score": 86.0,
+  "band": "Excellent",
+  "gaming_detected": false,
+  "claims_check": [
+    {
+      "timestamp": "02:32",
+      "claim": "Fee Rs. 12,000 for 48 sessions",
+      "verdict": "VERIFIED",
+      "source": "POLICY",
+      "note": "Class 104 INR 12,000"
+    },
+    {
+      "timestamp": "02:32",
+      "claim": "Rs. 250 per live session",
+      "verdict": "VERIFIED",
+      "source": "POLICY",
+      "note": "12,000 / 48 = 250"
+    },
+    {
+      "timestamp": "02:32",
+      "claim": "14-day 100% risk-free refund",
+      "verdict": "PARTIAL",
+      "source": "POLICY",
+      "note": "Policy: 100% within 14 days only up to 4 classes attended; pro-rata after. 'Risk-free' omits this."
+    },
+    {
+      "timestamp": "01:55",
+      "claim": "Maximum 6 kids per batch",
+      "verdict": "VERIFIED",
+      "source": "DEMO_EVAL",
+      "note": "recommended_batch_type Small_Group_Max_6"
+    },
+    {
+      "timestamp": "01:55",
+      "claim": "Batch ages 7 to 9; 5 kids enrolled, 1 seat left",
+      "verdict": "UNVERIFIED",
+      "source": "none",
+      "note": "No roster in inputs"
+    },
+    {
+      "timestamp": "01:20",
+      "claim": "Camera tilted down; Superhero Hook; 45-second story",
+      "verdict": "VERIFIED",
+      "source": "DEMO_EVAL",
+      "note": "Matches evaluation row 9001"
+    },
+    {
+      "timestamp": "01:55",
+      "claim": "Stage Showcase every 4th week; teacher calls each child 4-5 times",
+      "verdict": "UNVERIFIED",
+      "source": "none",
+      "note": "No curriculum document in inputs"
+    },
+    {
+      "timestamp": "04:15",
+      "claim": "Provisional hold of 6th seat until 11:00 AM",
+      "verdict": "UNVERIFIED",
+      "source": "none",
+      "note": "Rep's authority to hold seats not documented"
+    }
+  ],
+  "compliance_flags": [
+    {
+      "rule": "Refund stated without policy conditions",
+      "severity": "minor",
+      "timestamp": "02:32",
+      "quote": "backed by our official 14-day, 100% risk-free refund policy"
+    }
+  ],
+  "discount_check": {
+    "standard_fee": 12000,
+    "discount_offered": 0,
+    "discount_pct": 0.0,
+    "cap_pct": 10,
+    "within_cap": true
+  },
+  "coaching": {
+    "strengths": [
+      {
+        "timestamp": "00:46",
+        "text": "You used the educator's real details (asteroid, gravity) so the parent knew you had watched the demo. That is the strongest trust-builder in this dataset."
+      },
+      {
+        "timestamp": "03:18",
+        "text": "Asking what the absent father usually asks turned a blocker into a task you could solve, and the parent agreed immediately."
+      }
+    ],
+    "fixes": [
+      {
+        "timestamp": "02:32",
+        "text": "State the refund with its condition so no one is surprised later.",
+        "better_line": "There is a full refund in the first 14 days, as long as no more than 4 classes have been attended, and a pro-rata refund after that."
+      },
+      {
+        "timestamp": "04:30",
+        "text": "Invite the decision-maker in, not just a summary.",
+        "better_line": "Would it help if your husband joins our call after 8:30 tonight, so he can ask me directly?"
+      }
+    ],
+    "next_call_drill": "When a decision-maker is absent, always offer a call that includes them, then send the summary."
+  },
+  "parent_signals": {
+    "do_not_contact_requested": false,
+    "do_not_contact_quote": null,
+    "hostile_or_distressed": false
+  },
+  "missing_inputs": []
+}

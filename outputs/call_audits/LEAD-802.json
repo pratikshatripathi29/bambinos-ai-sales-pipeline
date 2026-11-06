@@ -1,0 +1,220 @@
+{
+  "lead_id": "LEAD-802",
+  "call_id": "7002",
+  "counsellor": "Sneha V*** (209)",
+  "criteria": [
+    {
+      "name": "rapport_child_praise",
+      "weight": 10,
+      "rating": 2,
+      "evidence": [
+        {
+          "timestamp": "00:12",
+          "speaker": "COUNSELLOR",
+          "quote": "How did you find the class?"
+        }
+      ],
+      "reasoning": "Asks how the parent found the class but names no moment from the demo; generic 'all our classes are gamified'."
+    },
+    {
+      "name": "diagnosing_learning_gap",
+      "weight": 20,
+      "rating": 2,
+      "evidence": [
+        {
+          "timestamp": "02:06",
+          "speaker": "PARENT",
+          "quote": "Did the teacher today notice why she struggles with word problems?"
+        },
+        {
+          "timestamp": "02:18",
+          "speaker": "COUNSELLOR",
+          "quote": "Uh, let me check... yes, the teacher gave her some puzzles and she did well."
+        }
+      ],
+      "reasoning": "Parent volunteers the pain (word problems) and asks directly; rep gives a vague answer and does not use the evaluation."
+    },
+    {
+      "name": "pitch_before_price",
+      "weight": 15,
+      "rating": 1,
+      "evidence": [
+        {
+          "timestamp": "00:30",
+          "speaker": "COUNSELLOR",
+          "quote": "So let me quickly tell you our fee structure for Dubai students."
+        }
+      ],
+      "reasoning": "Price quoted at 00:30 with no method explained."
+    },
+    {
+      "name": "objection_handling",
+      "weight": 20,
+      "rating": 1,
+      "evidence": [
+        {
+          "timestamp": "01:12",
+          "speaker": "COUNSELLOR",
+          "quote": "Building tuition is just old-fashioned rote learning where many kids sit together."
+        },
+        {
+          "timestamp": "02:38",
+          "speaker": "PARENT",
+          "quote": "AED 100 off doesn't answer my question."
+        }
+      ],
+      "reasoning": "Disparages the alternative and answers a method question with a discount."
+    },
+    {
+      "name": "trial_close_next_step",
+      "weight": 10,
+      "rating": 1,
+      "evidence": [
+        {
+          "timestamp": "02:54",
+          "speaker": "COUNSELLOR",
+          "quote": "the discount link expires in 30 minutes because batch seats fill very fast in Dubai"
+        },
+        {
+          "timestamp": "03:08",
+          "speaker": "PARENT",
+          "quote": "Please don't rush me."
+        }
+      ],
+      "reasoning": "Manufactured deadline; parent pushes back."
+    },
+    {
+      "name": "compliance_honesty",
+      "weight": 20,
+      "rating": 1,
+      "evidence": [
+        {
+          "timestamp": "00:30",
+          "speaker": "COUNSELLOR",
+          "quote": "So let me quickly tell you our fee structure for Dubai students."
+        }
+      ],
+      "reasoning": "Breaches the Maths (class 205) rule against dumping price in the first 2 minutes without explaining Bar-Model; false urgency; unverifiable package and credentials."
+    },
+    {
+      "name": "listening_talk_balance",
+      "weight": 5,
+      "rating": 2,
+      "evidence": [
+        {
+          "timestamp": "02:38",
+          "speaker": "PARENT",
+          "quote": "I don't even know what method your teacher used today"
+        }
+      ],
+      "reasoning": "Rep talk 68%; parent's question left unanswered."
+    }
+  ],
+  "raw_score": 27.0,
+  "gate_triggered": true,
+  "final_score": 27.0,
+  "band": "Critical",
+  "gaming_detected": false,
+  "claims_check": [
+    {
+      "timestamp": "00:30",
+      "claim": "6-month package AED 1,200",
+      "verdict": "VERIFIED",
+      "source": "POLICY",
+      "note": "Class 205 GCC AED 1,200"
+    },
+    {
+      "timestamp": "00:30",
+      "claim": "12-month, 96-class package AED 2,100",
+      "verdict": "UNVERIFIED",
+      "source": "none",
+      "note": "Policy lists only 48-session plans"
+    },
+    {
+      "timestamp": "02:18",
+      "claim": "AED 100 discount (1,200 to 1,100)",
+      "verdict": "VERIFIED",
+      "source": "POLICY",
+      "note": "8.3%, under the AED 120 cap"
+    },
+    {
+      "timestamp": "02:54",
+      "claim": "Discount link expires in 30 minutes; seats fill very fast",
+      "verdict": "UNVERIFIED",
+      "source": "none",
+      "note": "No seat data; classed as pressure tactic"
+    },
+    {
+      "timestamp": "01:12",
+      "claim": "Featured on Shark Tank India; top 1% certified teachers",
+      "verdict": "UNVERIFIED",
+      "source": "none",
+      "note": "Not in inputs"
+    },
+    {
+      "timestamp": "02:18",
+      "claim": "'The teacher gave her some puzzles and she did well'",
+      "verdict": "PARTIAL",
+      "source": "DEMO_EVAL",
+      "note": "Evaluation shows she solved two Grade-6 fraction word puzzles with the Bar-Model; rep did not know or use this"
+    }
+  ],
+  "compliance_flags": [
+    {
+      "rule": "Policy 205: do not dump price in the first 2 minutes without explaining Bar-Model vs rote tuition",
+      "severity": "critical",
+      "timestamp": "00:30",
+      "quote": "So let me quickly tell you our fee structure for Dubai students."
+    },
+    {
+      "rule": "False urgency / pressure close",
+      "severity": "minor",
+      "timestamp": "02:54",
+      "quote": "the discount link expires in 30 minutes because batch seats fill very fast in Dubai"
+    },
+    {
+      "rule": "Disparaging the parent's alternative",
+      "severity": "minor",
+      "timestamp": "01:12",
+      "quote": "Building tuition is just old-fashioned rote learning where many kids sit together."
+    }
+  ],
+  "discount_check": {
+    "standard_fee": 1200,
+    "discount_offered": 100,
+    "discount_pct": 8.3,
+    "cap_pct": 10,
+    "within_cap": true
+  },
+  "coaching": {
+    "strengths": [
+      {
+        "timestamp": "01:52",
+        "text": "You named fractions, decimals and word problems and mentioned Zing quizzes and monthly reports, so the parent heard that the program covers her concern."
+      },
+      {
+        "timestamp": "02:18",
+        "text": "The discount you offered was within the cap and calculated correctly."
+      }
+    ],
+    "fixes": [
+      {
+        "timestamp": "00:30",
+        "text": "Ask and explain before quoting. The demo educator already recorded the answer to this parent's question.",
+        "better_line": "Before fees, let me share what Mr. Vikram saw: Zoya solved two British-curriculum fraction word problems on her own with our Bar-Model drawing method."
+      },
+      {
+        "timestamp": "02:54",
+        "text": "Remove the deadline. When a parent says she is comparing, give her information, not a clock.",
+        "better_line": "Take your time. I'll send you a short sample of how the Bar-Model works so you can compare it with her tutor's worksheets."
+      }
+    ],
+    "next_call_drill": "Open the evaluation sheet before every call and read the 'magic moment' and 'learning gap' aloud to yourself."
+  },
+  "parent_signals": {
+    "do_not_contact_requested": false,
+    "do_not_contact_quote": null,
+    "hostile_or_distressed": false
+  },
+  "missing_inputs": []
+}

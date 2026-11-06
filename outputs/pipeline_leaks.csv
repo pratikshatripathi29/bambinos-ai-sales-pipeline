@@ -1,0 +1,13 @@
+priority,lead_id,counsellor,crm_says,evidence_shows,leak_type,currency,value_at_risk,recommended_action,evidence_source
+P0,LEAD-803,Amitabh,Interested / will pay today,Parent said do not call again; 42% discount; fake guarantee; blacklist threat,Compliance incident + wrong disposition,INR,9500,STOP_DO_NOT_CONTACT; cancel 18:00 follow-up; void link 99403; escalate,transcript 03:54; order 99403
+P0,LEAD-804,Rohan,Payment_Link_Sent,Order 99404 Paid 2026-11-03 11:40:12,Stale stage (already paid),USD,0,ONBOARD_PAID; cancel 20:00 chase,order 99404
+P0,LEAD-805,Pooja,Thinking,Agreed to pay; Installment 1 failed 20:45 (OTP timeout on UPI mandate),"Failed payment, follow-up 39h away",INR,10800,SEND_PAYMENT_RECOVERY with fresh one-time link,order 99405; transcript 03:28
+P0,LEAD-809,Rohan,Card error,3DS authentication declined by issuer; no call log,Failed payment + mislabel + un-auditable call,GBP,210,SEND_PAYMENT_RECOVERY; add call to audit backlog,order 99409
+P0,LEAD-801,Rohan,Call back tomorrow,Link opened twice 21:15; seat hold expired 11:00 on 11-03; no logged callback,Overdue callback + buying signal not in CRM,INR,12000,CALL_NOW; confirm seat; merge 811,order 99401; transcript 04:15
+P1,LEAD-811,Pooja,Not called,Duplicate of 801 (same user/student/mobile),Duplicate routed to second rep,INR,0,MERGE_DUPLICATE into 801; block Pooja outreach,crm rows 801/811
+P1,LEAD-802,Sneha,Price issue,Real objection is local-tutor comparison; demo evidence unused,Wrong objection bucket,AED,1100,Reclassify; method-based follow-up; no discount,transcript 02:38; eval 9002
+P1,LEAD-806,Karan,Child not interested,Demo batch mismatch; policy requires bridge session or micro-batch,Wrong disposition + policy breach,INR,11000,ACADEMIC_TEAM_CONTACT; offer free 1-on-1 bridge,eval 9006; policy 401
+P1,LEAD-807,Sneha,NULL,Engagement 5/5; asked when batch starts; never called,Uncalled high-intent,INR,13500,CALL_NOW,eval 9007
+P1,LEAD-812,Sneha,NULL,Engagement 5/5; mother clapped; never called; track not in catalog,Uncalled high-intent,USD,265,CALL_NOW; verify track and price,eval 9012
+P2,LEAD-808,Amitabh,Busy / ok,Engagement 4/5; no call log; class 108 not in pricing policy,Useless note + un-auditable + catalog gap,AED,1200,CALL_NOW; confirm class 108 price; audit call,"eval 9008 (value is a proxy, UNVERIFIED)"
+P2,LEAD-810,Karan,Call back / cb,next_followup_at precedes last_call_at; no call log,Invalid date + un-auditable,INR,9500,Fix date; CALL_NOW; audit call,crm row 810

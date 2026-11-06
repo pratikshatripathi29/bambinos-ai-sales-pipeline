@@ -1,0 +1,60 @@
+{
+  "lead_id": "LEAD-812",
+  "lead_intent": {
+    "label": "Warm",
+    "score": 5,
+    "score_breakdown": [
+      {
+        "signal": "Engagement >= 4",
+        "points": 1,
+        "evidence": "evaluation 9012: 5"
+      },
+      {
+        "signal": "Asked method question (Karma Yoga and school/sport)",
+        "points": 1,
+        "evidence": "evaluation 9012 magic moment"
+      }
+    ]
+  },
+  "primary_objection": {
+    "bucket": "None",
+    "sub_type": null,
+    "status": "n/a",
+    "evidence": {
+      "timestamp": null,
+      "quote": null
+    }
+  },
+  "secondary_objections": [],
+  "demo_highlight": "Riya asked how Karma Yoga applies to school grades and sports competitions, and her mother clapped beside her.",
+  "payment_status": "none",
+  "crm_stage_recommended": "Follow_Up_Warm",
+  "do_not_contact": false,
+  "compliance_summary": {
+    "gate_triggered": false,
+    "flags": []
+  },
+  "next_best_action": {
+    "value": "CALL_NOW",
+    "secondary_actions": [
+      "verify Teen Leadership track and price"
+    ],
+    "owner": "counsellor",
+    "due": "Within 2 hours, inside US-friendly hours (CST)"
+  },
+  "note": {
+    "original_note": null,
+    "clean_note": "High-engagement demo (5/5); a 12-year-old who gets anxious before swim meets and tests asked how Karma Yoga applies. Mother present and engaged. No call and no follow-up.",
+    "note_quality": "missing"
+  },
+  "data_flags": [
+    "Demo completed with no call and no follow-up",
+    "Teen Leadership track not named in catalog (UNVERIFIED price)",
+    "Intent score capped by lack of call evidence"
+  ],
+  "revenue_at_stake": {
+    "currency": "USD",
+    "amount": 265,
+    "basis": "list price"
+  }
+}

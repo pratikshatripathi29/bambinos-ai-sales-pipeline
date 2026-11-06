@@ -1,0 +1,94 @@
+{
+  "lead_id": "LEAD-805",
+  "lead_intent": {
+    "label": "Hot",
+    "score": 9,
+    "score_breakdown": [
+      {
+        "signal": "Payment intent with timing",
+        "points": 2,
+        "evidence": "[03:28] main raat ko dinner ke baad UPI se kar dunga"
+      },
+      {
+        "signal": "Payment attempted",
+        "points": 2,
+        "evidence": "order 99405 attempted 2026-11-03 20:45 (failed)"
+      },
+      {
+        "signal": "Asked logistics (fee, exams, batch)",
+        "points": 1,
+        "evidence": "[02:20] school exams and fee questions"
+      },
+      {
+        "signal": "Engagement >= 4",
+        "points": 1,
+        "evidence": "evaluation 9005: 4"
+      },
+      {
+        "signal": "Price accepted after installment",
+        "points": 1,
+        "evidence": "[03:28] yeh kaafi comfortable hai"
+      },
+      {
+        "signal": "Decision-maker hesitant",
+        "points": -1,
+        "evidence": "[01:14] mummy bol rahi hain exams ke baad dekhenge"
+      }
+    ]
+  },
+  "primary_objection": {
+    "bucket": "Competitor_Comparison",
+    "sub_type": "online_competitor",
+    "status": "resolved",
+    "evidence": {
+      "timestamp": "01:14",
+      "quote": "pichle hafte humne PlanetSpark ka bhi demo liya tha"
+    }
+  },
+  "secondary_objections": [
+    {
+      "bucket": "Schedule_Conflict",
+      "sub_type": "exam_period",
+      "status": "resolved"
+    },
+    {
+      "bucket": "Price",
+      "sub_type": "wants_installment",
+      "status": "resolved"
+    }
+  ],
+  "demo_highlight": "Kabir practiced the PEEL method on 'Should homework be banned?' and spoke for 60 seconds straight without a single filler word.",
+  "payment_status": "failed",
+  "crm_stage_recommended": "Payment_Failed_Recovery",
+  "do_not_contact": false,
+  "compliance_summary": {
+    "gate_triggered": false,
+    "flags": [
+      "competitor price claim UNVERIFIED",
+      "Exam Pause feature UNVERIFIED"
+    ]
+  },
+  "next_best_action": {
+    "value": "SEND_PAYMENT_RECOVERY",
+    "secondary_actions": [
+      "confirm family view on starting before exams (mother)"
+    ],
+    "owner": "counsellor_approves",
+    "due": "2026-11-04 09:00 IST (next morning)"
+  },
+  "note": {
+    "original_note": "comparing with planetspark and school exam going on",
+    "clean_note": "Father agreed to Rs 10,800 (10% off) in 2 installments: Rs 5,400 now, Rs 5,400 at Day 30. PlanetSpark, exam and cash-flow concerns answered on the call. Mother's 'after exams' view not addressed directly. Installment 1 failed 11-03 20:45 (UPI mandate OTP timeout). Needs a fresh one-time link.",
+    "note_quality": "misleading"
+  },
+  "data_flags": [
+    "Failed payment was a UPI mandate flow; use a one-time link",
+    "Next follow-up (11-05 12:00) is about 39 hours after the failure",
+    "Disposition 'Thinking' hides a committed buyer"
+  ],
+  "revenue_at_stake": {
+    "currency": "INR",
+    "amount": 10800,
+    "basis": "agreed net"
+  }
+}

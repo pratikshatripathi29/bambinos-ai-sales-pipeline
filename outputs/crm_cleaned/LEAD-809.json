@@ -1,0 +1,61 @@
+{
+  "lead_id": "LEAD-809",
+  "lead_intent": {
+    "label": "Warm",
+    "score": 6,
+    "score_breakdown": [
+      {
+        "signal": "Payment attempted",
+        "points": 2,
+        "evidence": "order 99409 attempted 2026-11-03 14:15"
+      },
+      {
+        "signal": "Engagement >= 4",
+        "points": 1,
+        "evidence": "evaluation 9009: 5"
+      }
+    ]
+  },
+  "primary_objection": {
+    "bucket": "None",
+    "sub_type": null,
+    "status": "n/a",
+    "evidence": {
+      "timestamp": null,
+      "quote": null
+    }
+  },
+  "secondary_objections": [],
+  "demo_highlight": "Devansh solved the 4-disc Tower of Hanoi logic challenge on his first attempt.",
+  "payment_status": "failed",
+  "crm_stage_recommended": "Payment_Failed_Recovery",
+  "do_not_contact": false,
+  "compliance_summary": {
+    "gate_triggered": false,
+    "flags": []
+  },
+  "next_best_action": {
+    "value": "SEND_PAYMENT_RECOVERY",
+    "secondary_actions": [
+      "audit the logged call"
+    ],
+    "owner": "counsellor_approves",
+    "due": "2026-11-04 09:00 GMT"
+  },
+  "note": {
+    "original_note": "mother tried paying on stripe link failed need to send new link",
+    "clean_note": "Mother attempted GBP 210 payment about 15 minutes after the call. It failed at 14:15 with '3DS authentication declined by issuer' (bank verification, not a card error). Needs a fresh link and help approving in the banking app or using another card.",
+    "note_quality": "vague"
+  },
+  "data_flags": [
+    "Failure type mislabelled as 'card error'",
+    "Call logged but no transcript",
+    "No GBP price in policy (UNVERIFIED)",
+    "Intent understated: payment attempt shows commitment"
+  ],
+  "revenue_at_stake": {
+    "currency": "GBP",
+    "amount": 210,
+    "basis": "list price"
+  }
+}
